@@ -1,0 +1,291 @@
+/* Diana Alibekova */
+/* Portfolio */
+
+/* the design of the button on the top of the page with a hyperlink to other sections of the page */
+button {
+  background: orange;
+  text-align: center;
+  color: white;
+  font-size: 13px;
+  font-family: 'Roboto';
+  position: relative;
+  left: 100px;
+  margin: 50px;
+  padding: 6px 15px;
+  width: 190px;
+  border: 0;
+  border-radius: 999px;
+  line-height: 30px;
+  cursor: pointer;
+}
+
+/* changing the color of the button when the mouse is over it */
+button:hover {
+  background: #e27038;
+}
+
+
+/* Section about me starts here */
+/* structuring the text on the right side of the image was based on the website https://www.codingnepalweb.com/about-us-page-html-css/ */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto';
+}
+
+.about_me{
+  height: 100%;
+  width: auto;
+  padding: 100px 0 100px 0;
+}
+
+.me{
+  width:  400px;
+  height: auto;
+}
+
+.personal_info{
+  max-width: 90%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+/* the specifics of text on the right side */
+.info{
+  width: 50%;
+}
+
+.info h1{
+  font-family: 'Acme';
+  font-size: 65px;
+  margin-bottom: 15px;
+}
+
+.info h4{
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+
+span{
+  color: orange;
+}
+
+.info p{
+  font-size: 18px;
+  line-height: 25px;
+  letter-spacing: 1px;
+}
+
+/* the social media icons with links which hovers when mouse is over */
+.social{
+  margin-top: 40px;
+}
+
+.social-link:hover{
+    background: orange;
+    box-shadow: 0 0 5px 5px orange;
+    opacity: 0.8;
+}
+
+/* the sections with the projects start here */
+.projects {
+  text-align: center;
+  height: 65%;
+  width: auto;
+  padding: 100px 0 100px 0;
+}
+
+.project-images {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.project-row {
+  display: flex;
+  justify-content: center;
+}
+
+/* the specifics of the images in each row such as the distance between images, size of them, alignment and hover */
+.project-item {
+  flex: 0 0 calc(50% - 10px);
+  margin: 5px 5px 15px 5px;
+}
+
+.project-item img {
+  width: 75%;
+  height: auto;
+  align-content: center;
+  margin-top: auto;
+}
+
+.project-item img:hover {
+  color: #111;
+  box-shadow: 0 0 20px 20px orange;
+  opacity: 0.8;
+}
+
+/* specific design for the Section about the graphic design project in different organizations */
+/* the specifics of the images in each row such as the distance between images, size of them, alignment and hover */
+.project-item-2 {
+  flex: 0 0 calc(30% - 10px);
+  margin: 5px 5px 15px 5px;
+}
+
+.project-item-2 img {
+  width: 70%;
+  height: auto;
+  align-content: center;
+  margin-top: auto;
+  border-radius: 50%;
+}
+
+.project-item-2 img:hover {
+  color: #111;
+  box-shadow: 0 0 20px 20px orange;
+  opacity: 0.8;
+}
+
+/* every sub-heading of h2 has the same design */
+h2{
+  position: relative;
+  font-size: 45px;
+  text-align: center;
+  font-weight: bold;
+  font-family: Rubik, PT Sans, Lato;
+  color: #333;
+  margin: 10px;
+}
+
+/* every sub-heading of h3 has the same design */
+h3{
+  position: relative;
+  font-size: 30px;
+  text-align: center;
+  font-family: Rubik, PT Sans, Lato;
+  font-weight: normal;
+  color: #666;
+  padding: 0;
+  margin: 10px 10px 0 10px;
+}
+
+/* the text under the logo of each organization I have the graphic design of */
+.project_description {
+  font-size: 17px;
+  color: #333;
+  font-family: 'Roboto';
+  font-weight: normal;
+  color: #333;
+  margin:10px;
+  padding-top: 5px;
+}
+
+/* the design of the page "HeyMe" starts here */
+.about_heyme{
+  height: 100%;
+  width: auto;
+  padding: 100px 0 100px 0;
+}
+.heyme{
+  height: auto;
+  width:  40%;
+}
+.about_brand{
+  max-width: 90%;
+  margin: 0 auto;
+  display: flex;
+  align-items: top;
+  justify-content: space-around;
+}
+
+/* the text design */
+.description{
+  width: 35%;
+}
+.description h1{
+  font-size: 70px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  font-family: 'Roboto';
+}
+.description h5{
+  font-size: 25px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.description p{
+  font-size: 18px;
+  line-height: 25px;
+  letter-spacing: 1px;
+}
+
+/* The design of the page 'Qazaq SIG' starts here */
+.about_qazaq{
+  height: 100%;
+  width: auto;
+  padding: 100px 0 100px 0;
+}
+.kazakhstan{
+  height: auto;
+  width:  60%;
+}
+.about_sig{
+  max-width: 90%;
+  margin: 0 auto;
+  display: flex;
+  align-items: top;
+  justify-content: space-around;
+}
+
+/* the text design */
+.sig_purpose{
+  width: 35%;
+}
+.sig_purpose h1{
+  font-size: 70px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  font-family: 'Roboto';
+}
+.sig_purpose h5{
+  font-size: 25px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.sig_purpose p{
+  font-size: 18px;
+  line-height: 25px;
+  letter-spacing: 1px;
+}
+
+/* Section with the videography starts here */
+.video-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.row {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.video {
+    width: 60%;
+    margin-bottom: 15px;
+    margin-left: 20px;
+}
+
+.video video {
+    width: 100%;
+    height: auto;
+}

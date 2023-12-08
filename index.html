@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+ <title> Diana's portfolio </title>
+ <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+
+ <!-- AOS files taken from the website https://michalsnik.github.io/aos/ -->
+     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+  <!-- the fonts are downloaded from google -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Salsa|Acme">
+
+</head>
+<body>
+
+<!-- the buttons as a hyperlink for every section of the page -->
+  <button type="button" onclick="location.href='#Interactive_Media'">Interactive Media</button>
+  <button type="button" onclick="location.href='#design'">Graphic Design</button>
+  <button type="button" onclick="location.href='#album'">Album Cover</button>
+  <button type="button" onclick="location.href='#videography'">Videography</button>
+
+  <!-- structuring of the text on the right side of the picture was based on the layout on https://www.codingnepalweb.com/about-us-page-html-css/ -->
+  <section class="about_me">
+    <div class="personal_info">
+      <div class="block" data-aos="flip-left"
+           data-aos-easing="ease-out-cubic"
+           data-aos-duration="3000">
+           <img src="images/animated_me.gif" class="me">
+      </div>
+      <div class="info">
+        <h1 id="about_author">DIANA ALIBEKOVA</h1>
+        <h4><span>Interactive Media</span> & <span>Graphic Designer</span></h4>
+            <p>Diana's interest in digital media flourished with a start-up "HeyMe" based in Astana back in 2020.</p>
+            <br>
+            <p>At the moment, she is the creative content manager in "Student Leadership and Engagement Committee" and "Qazaq Student Association" at New York University Abu Dhabi.</p>
+            <br>
+            <p>Find her works in interactive media, graphic design and videography here!</p>
+        <!-- the social media icons with the link to my social media pages -->
+        <div class="social">
+       <a href="https://www.instagram.com/_diannella_" target="_blank"><img src="images/instagram_icon.png" class="social-link" alt="Instagram"></a>
+       <a href="https://www.linkedin.com/in/diana-alibekova" target="_blank"><img src="images/linkedin_icon.png" class="social-link" alt="LinkedIn"></a>
+       <a href="mailto:da3002@nyu.edu"><img src="images/gmail_icon.png" class="social-link" alt="Gmail"></a>
+     </div>
+      </div>
+    </div>
+  </section>
+
+<!-- Section about Interactive Media projects -->
+  <section class="projects" id="CommLab">
+   <h2 id="Interactive_Media">Interactive Media Projects</h2>
+   <h3 id="Communications_Lab">Communications Lab Projects</h3>
+   <!-- the projects container with two websites in each row -->
+   <div class="project-images">
+     <div class="project-row">
+       <div class="project-item">
+         <div data-aos="fade-down-right"><a href="https://dianaalibekova.github.io" target="_blank"><img src="images/comm_lab_1.png" alt="Frame"></a></div>
+       <div class="project_description">
+       <p><b>STUDENT HELP WEBSITE</b></p>
+       <p>Individual project</p>
+       </div>
+     </div>
+     <div class="project-item">
+       <div data-aos="fade-down-left"><a href="https://aruzhan-bolatova.github.io/aru-diana-sara-comics.github.io/" target="_blank"><img src="images/comm_lab_2.png" alt="Frame"></a></div>
+        <div class="project_description">
+          <p><b>INTERACTIVE COMICS WEBSITE</b></p>
+          <p>Group project w/ Aruzhan & Sara</p>
+        </div>
+     </div>
+     </div>
+     <!-- next row with two other websites starts here -->
+     <div class="project-row">
+       <div class="project-item">
+         <div data-aos="fade-down-right"><a href="https://dianaalibekova.github.io/soundproject/" target="_blank"><img src="images/comm_lab_3.png" alt="Frame"></a></div>
+        <div class="project_description">
+          <p><b>SOUNDSCAPE WEBSITE</b></p>
+          <p>Group project w/Darko, Maisha & Youssef</p>
+        </div>
+     </div>
+     <div class="project-item">
+       <div data-aos="fade-down-left"><a href="https://aruzhan-bolatova.github.io/video-project.github.io/" target="_blank"><img src="images/comm_lab_4.png" alt="Project 4"></a></div>
+        <div class="project_description">
+          <p><b>INTERACTIVE COMEDY WEBSITE</b></p>
+          <p>Group project w/Alreem, Aruzhan & Sara</p>
+        </div>
+     </div>
+   </div>
+   </div>
+ </section>
+
+
+<!-- Section about Graphic design projects in three different organizations-->
+ <section class="projects" id="design">
+  <h2>Graphic Design</h2>
+  <h3>Posters and Merch</h3>
+  <div class="project-images">
+    <div class="project-row">
+      <div class="project-item-2">
+        <div data-aos="zoom-in"><a href="eventsboard.html"><img src="images/events_board_logo.jpg" alt="eb_logo"></a>
+        <div class="project_description">
+        <p><b>STUDENT ENGAGEMENT & LEADERSHIP</b></p>
+        <p>Posters and Merch</p></div>
+      </div>
+    </div>
+    <div class="project-item-2">
+      <div data-aos="zoom-in"><a href="heyme.html"><img src="images/heyme_logo.jpeg" alt="heyme_logo"></a>
+       <div class="project_description">
+         <p><b>HEYME START-UP</b></p>
+         <p>T-shirt print design</p>
+       </div></div>
+    </div>
+    <div class="project-item-2">
+      <div data-aos="zoom-in"><a href="qazaq.html"><img src="images/qazaq_sig_logo.png" alt="qazaq_logo"></a>
+       <div class="project_description">
+         <p><b>QAZAQ STUDENT ASSOCIATION</b></p>
+         <p>Digital posters</p>
+       </div></div>
+    </div>
+    </div>
+  </div>
+</section>
+
+<!-- Section about the Album Cover created by me-->
+<section class="projects" id="album">
+  <div class="personal_info">
+    <div class="info">
+      <h2>Take off Your Crown</h2>
+      <h3>The design of the Album Cover</h3>
+          <p>The song "Сними корону" (Take off your Crown) by ChiL-Q was released during the pandemic about the mental fatigue and consequences of COVID-19. Based on the preferences of the artist and the lyrics of the song, Diana created the digital album cover for the song. </p>
+    </div>
+    <div class="block" data-aos="flip-left"
+         data-aos-easing="ease-out-cubic"
+         data-aos-duration="3000">
+         <img src="images/cover.jpg" alt="Frame" class="me">
+    </div>
+  </div>
+</section>
+
+<!-- Section about the videography projects -->
+<section class="projects">
+  <h2 id="videography">Videography</h2>
+  <h3>Instagram Reels</h3>
+  <!-- the container with two rows with three videos in each row, so six videos overall -->
+  <div class="video-container">
+          <div class="row">
+              <div class="video">
+                  <video width="100%" height="auto" controls>
+                      <source src="videos/childhood.mp4" type="video/mp4">
+                  </video>
+                  <p><b>CHILDHOOD VIBES</b></p>
+                  <p>Filming & Editing</p>
+              </div>
+              <div class="video">
+                  <video width="100%" height="auto" controls>
+                      <source src="videos/turkey.mp4" type="video/mp4">
+                  </video>
+                  <p><b>TURKEY TRIP 156K VIEWS</b></p>
+                  <p>Filming & Editing</p>
+              </div>
+              <div class="video">
+                  <video width="100%" height="auto" controls>
+                      <source src="videos/qazaq.mp4" type="video/mp4">
+                  </video>
+                  <p><b>QAZAQ SIG PREPERATION</b></p>
+                  <p>Filming & Editing</p>
+              </div>
+          </div>
+          <div class="row">
+              <div class="video">
+                  <video width="100%" height="auto" controls>
+                      <source src="videos/restaurant.mp4" type="video/mp4">
+                  </video>
+                  <p><b>AESTHETIC VIDEO</b></p>
+                  <p>Filming & Editing</p>
+              </div>
+              <div class="video">
+                  <video width="100%" height="auto" controls>
+                      <source src="videos/georgia.mp4" type="video/mp4">
+                  </video>
+                  <p><b>GEORGIA TRIP</b></p>
+                  <p>Filming & Editing</p>
+              </div>
+              <div class="video">
+                  <video width="100%" height="auto" controls>
+                      <source src="videos/museum.mp4" type="video/mp4">
+                  </video>
+                  <p><b>THE LOUVRE ABU DHABI</b></p>
+                  <p>Filming & Editing</p>
+              </div>
+          </div>
+          <div class="video">
+              <video width="100%" height="auto" controls>
+                  <source src="videos/graduation.mp4" type="video/mp4">
+              </video>
+              <p><b>MY HIGH SCHOOL GRADUATION</b></p>
+              <p>Only Editing</p>
+      </div>
+</section>
+  <script src="script.js"> </script>
+</body>
+</html>
