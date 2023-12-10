@@ -26,7 +26,7 @@ button:hover {
 
 
 /* Section about me starts here */
-/* structuring the text on the right side of the image was based on the website https://www.codingnepalweb.com/about-us-page-html-css/ */
+/* structuring the text on the right side of the image was based on the layout on https://www.codingnepalweb.com/about-us-page-html-css/ */
 *{
   margin: 0;
   padding: 0;
@@ -58,21 +58,25 @@ button:hover {
   width: 50%;
 }
 
+/* the design of text about my name and surname */
 .info h1{
   font-family: 'Acme';
   font-size: 65px;
   margin-bottom: 15px;
 }
 
+/* the design of text about my speciality */
 .info h4{
   font-size: 25px;
   margin-bottom: 20px;
 }
 
+/* the text on span has different color (orange) */
 span{
   color: orange;
 }
 
+/* the short paragraph under my name and speciality */
 .info p{
   font-size: 18px;
   line-height: 25px;
@@ -83,14 +87,14 @@ span{
 .social{
   margin-top: 40px;
 }
-
 .social-link:hover{
     background: orange;
     box-shadow: 0 0 5px 5px orange;
     opacity: 0.8;
 }
 
-/* the sections with the projects start here */
+/* SECTION WITH PROJECTS STARTS HERE */
+/* THE PROJECT IN COMMLAB */
 .projects {
   text-align: center;
   height: 65%;
@@ -98,6 +102,7 @@ span{
   padding: 100px 0 100px 0;
 }
 
+/* The project images are in two rows and two columns, so four photos of projects in two rows */
 .project-images {
   display: flex;
   flex-direction: column;
@@ -105,6 +110,7 @@ span{
   margin-top: 40px;
 }
 
+/* centering content horizontally */
 .project-row {
   display: flex;
   justify-content: center;
@@ -112,30 +118,33 @@ span{
 
 /* the specifics of the images in each row such as the distance between images, size of them, alignment and hover */
 .project-item {
+  /* as there are two images in a row, every projec item occupies the half of the width with margins for spacing*/
   flex: 0 0 calc(50% - 10px);
   margin: 5px 5px 15px 5px;
 }
 
+/* styling the image in the project item by providing size and centering */
 .project-item img {
   width: 75%;
   height: auto;
   align-content: center;
-  margin-top: auto;
 }
-
+/* the orange hover with shadow appears when the mouse is over the image */
 .project-item img:hover {
   color: #111;
   box-shadow: 0 0 20px 20px orange;
   opacity: 0.8;
 }
 
-/* specific design for the Section about the graphic design project in different organizations */
+/* SECTION WITH PROJECTS IN DIFFERENT ORGANIZATIONS STARTS HERE*/
 /* the specifics of the images in each row such as the distance between images, size of them, alignment and hover */
 .project-item-2 {
+    /* as there are three images in a row, every project item occupies third of the width with margins for spacing*/
   flex: 0 0 calc(30% - 10px);
   margin: 5px 5px 15px 5px;
 }
 
+/* styling the image in the project item by providing size and centering */
 .project-item-2 img {
   width: 70%;
   height: auto;
@@ -143,14 +152,15 @@ span{
   margin-top: auto;
   border-radius: 50%;
 }
-
+/* the orange hover with shadow appears when the mouse is over the image */
 .project-item-2 img:hover {
   color: #111;
   box-shadow: 0 0 20px 20px orange;
   opacity: 0.8;
 }
 
-/* every sub-heading of h2 has the same design */
+/* every sub-heading (h2) such as "Graphic Design", "Take off Your Crown", "Videography" and etc has the same design */
+/* the design of the headings follow my design of previous project website "Major Help" on assignment 1*/
 h2{
   position: relative;
   font-size: 45px;
@@ -161,7 +171,8 @@ h2{
   margin: 10px;
 }
 
-/* every sub-heading of h3 has the same design */
+/* every sub-heading (h3) such as "Posters and Merch", "The design of the Album Cover", "Instagram Reels" and etc has the same design */
+/* the design of the headings follow my design of previous project website "Major Help" on assignment 1*/
 h3{
   position: relative;
   font-size: 30px;
@@ -176,7 +187,6 @@ h3{
 /* the text under the logo of each organization I have the graphic design of */
 .project_description {
   font-size: 17px;
-  color: #333;
   font-family: 'Roboto';
   font-weight: normal;
   color: #333;
@@ -184,7 +194,8 @@ h3{
   padding-top: 5px;
 }
 
-/* the design of the page "HeyMe" starts here */
+/* DESIGN OF PAGE "HEYME" STARTS HERE */
+/* The design follows the "about me" page design */
 .about_heyme{
   height: 100%;
   width: auto;
@@ -224,7 +235,8 @@ h3{
   letter-spacing: 1px;
 }
 
-/* The design of the page 'Qazaq SIG' starts here */
+/* DESIGN OF PAGE "QAZAQ SIG" STARTS HERE */
+/* The design follows the "about me" page design */
 .about_qazaq{
   height: 100%;
   width: auto;
@@ -264,28 +276,31 @@ h3{
   letter-spacing: 1px;
 }
 
-/* Section with the videography starts here */
+/* SECTION WITH VIDEOS STARTS HERE */
+/* arranging the content in columns and centering the items. Takes up whole screen width */
 .video-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
 }
-
+/* arraning contents in rows and centering horizontally. Takes up 70% of video-container width */
 .row {
     width: 70%;
     display: flex;
     justify-content: center;
     margin-bottom: 20px;
 }
-
+/* video takes 60% of width and has margins */
 .video {
     width: 60%;
     margin-bottom: 15px;
     margin-left: 20px;
 }
-
+/* the videos themselves maintain the ratio */
 .video video {
     width: 100%;
     height: auto;
 }
+
+/* END OF MY PORTFOLIO'S CSS FILE */
