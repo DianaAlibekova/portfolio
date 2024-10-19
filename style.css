@@ -1,27 +1,35 @@
 /* Diana Alibekova */
 /* Portfolio */
 
-/* the design of the button on the top of the page with a hyperlink to other sections of the page */
+
+html {
+  scroll-behavior: smooth;
+}
+
+.container {
+  max-width: 95%;
+  margin: 0 auto;
+  padding: 2%;
+}
+
 button {
   background: orange;
   text-align: center;
   color: white;
-  font-size: 13px;
+  font-size: 0.8rem;
   font-family: 'Roboto';
   position: relative;
-  left: 100px;
-  margin: 50px;
-  padding: 6px 15px;
-  width: 190px;
+  left: 5%;
+  margin: 3%;
+  padding: 1% 1%;
+  width: 17%;
   border: 0;
   border-radius: 999px;
-  line-height: 30px;
+  line-height: 1.5rem;
   cursor: pointer;
 }
-
-/* changing the color of the button when the mouse is over it */
 button:hover {
-  background: #e27038;
+  background: #00008B;
 }
 
 
@@ -38,59 +46,63 @@ button:hover {
   height: 100%;
   width: auto;
   padding: 100px 0 100px 0;
+  display: flex;
 }
 
 .me{
-  width:  400px;
+  width:  350px;
   height: auto;
 }
 
 .personal_info{
-  max-width: 90%;
+  max-width: 100%;
   margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: space-around;
 }
 
-/* the specifics of text on the right side */
 .info{
   width: 50%;
 }
 
-/* the design of text about my name and surname */
 .info h1{
   font-family: 'Acme';
   font-size: 65px;
-  margin-bottom: 15px;
+  margin: 15px 0;
 }
 
-/* the design of text about my speciality */
 .info h4{
   font-size: 25px;
   margin-bottom: 20px;
 }
 
-/* the text on span has different color (orange) */
 span{
-  color: orange;
+  color: #f8971c;
+  font-weight: bold;
+
 }
 
-/* the short paragraph under my name and speciality */
 .info p{
   font-size: 18px;
   line-height: 25px;
   letter-spacing: 1px;
 }
 
-/* the social media icons with links which hovers when mouse is over */
 .social{
   margin-top: 40px;
 }
+
+.social-link {
+  width: 50px;
+  height: auto;
+  margin-right: 15px;
+}
+
 .social-link:hover{
-    background: orange;
-    box-shadow: 0 0 5px 5px orange;
-    opacity: 0.8;
+    /* background: orange; */
+    shadow: 10px 10px 5px 5px orange;
+    opacity: 0.5;
 }
 
 /* SECTION WITH PROJECTS STARTS HERE */
@@ -109,29 +121,22 @@ span{
   align-items: center;
   margin-top: 40px;
 }
-
-/* centering content horizontally */
 .project-row {
   display: flex;
   justify-content: center;
 }
 
-/* the specifics of the images in each row such as the distance between images, size of them, alignment and hover */
 .project-item {
-  /* as there are two images in a row, every projec item occupies the half of the width with margins for spacing*/
   flex: 0 0 calc(30% - 10px);
   margin: 5px 5px 15px 5px;
 }
 
-/* styling the image in the project item by providing size and centering */
 .project-item img {
   width: 75%;
   height: auto;
   align-content: center;
   border-radius: 10%;
 }
-
-/* the orange hover with shadow appears when the mouse is over the image */
 .project-item img:hover {
   color: #e27038;
   box-shadow: 0 0 10px 10px gray;
@@ -147,15 +152,14 @@ a {
     line-height: 50px;
     letter-spacing: 1px;
 }
+
 /* SECTION WITH PROJECTS IN DIFFERENT ORGANIZATIONS STARTS HERE*/
 /* the specifics of the images in each row such as the distance between images, size of them, alignment and hover */
 .project-item-2 {
-    /* as there are three images in a row, every project item occupies third of the width with margins for spacing*/
   flex: 0 0 calc(30% - 10px);
   margin: 5px 5px 15px 5px;
 }
 
-/* styling the image in the project item by providing size and centering */
 .project-item-2 img {
   width: 70%;
   height: auto;
@@ -171,19 +175,17 @@ a {
 }
 
 /* every sub-heading (h2) such as "Graphic Design", "Take off Your Crown", "Videography" and etc has the same design */
-/* the design of the headings follow my design of previous project website "Major Help" on assignment 1*/
 h2{
   position: relative;
   font-size: 45px;
   text-align: center;
   font-weight: bold;
   font-family: Rubik, PT Sans, Lato;
-  color: #333;
+  color: #00008B;
   margin: 10px;
 }
 
 /* every sub-heading (h3) such as "Posters and Merch", "The design of the Album Cover", "Instagram Reels" and etc has the same design */
-/* the design of the headings follow my design of previous project website "Major Help" on assignment 1*/
 h3{
   position: relative;
   font-size: 30px;
@@ -200,9 +202,9 @@ h5{
   position: relative;
   font-size: 45px;
   text-align: center;
-  font-weight: bolder;
+  font-weight: bold;
   font-family: Rubik, PT Sans, Lato;
-  color: orange;
+  color: #00008B;
   margin: 10px;
 
 }
@@ -248,12 +250,10 @@ h5{
 }
 .description h5{
   font-size: 25px;
-  font-weight: 500;
-  /* margin-bottom: 20px; */
   background-color: orange;
     text-align: left;
-    padding: 10px; /* Add padding for better visual appearance */
-    margin: 0; /* Remove default margin for better alignment */
+    padding: 10px;
+    margin: 0;
 }
 
 .description p{
@@ -278,8 +278,8 @@ h5{
         }
 
         .image-container {
-            flex: 0 0 20%; /* Adjust the width of each image container */
-            margin-right: 10px; /* Add margin for spacing between images and text */
+            /* flex: 0 0 20%; /* Adjust the width of each image container */
+            /* margin-right: 5px; /* Add margin for spacing between images and text */ */
         }
 
         .image-container img {
@@ -290,21 +290,21 @@ h5{
         }
 
         .sig_purpose {
-          width: 60%; /* Adjust the width of the text container */
+          width: 50%; /* Adjust the width of the text container */
       box-sizing: border-box;
       margin-right: 60px;
       margin-left: 60px;
         }
 
 
-/* .about_qazaq{
-  height: 100%;
-  width: auto;
-  padding: 100px 0 100px 0;
-} */
 .kazakhstan{
   height: auto;
   width:  60%;
+}
+
+.igem{
+  height: auto;
+  width: 30%
 }
 
 .me{
@@ -312,18 +312,8 @@ h5{
   color: #e27038;
   box-shadow: 0 0 10px 10px gray;
 }
-/* .about_sig{
-  max-width: 90%;
-  margin: 0 auto;
-  display: flex;
-  align-items: top;
-  justify-content: space-around;
-} */
 
-/* the text design */
-/* .sig_purpose{
-  width: 35%;
-} */
+
 
 .sig_purpose h1{
   font-size: 70px;
@@ -333,7 +323,7 @@ h5{
 }
 .sig_purpose h5{
   font-size: 25px;
-  font-weight: 500;
+  /* font-weight: 500; */
   margin-bottom: 20px;
 }
 
@@ -353,24 +343,232 @@ h5{
     align-items: center;
     width: 100%;
 }
-/* arraning contents in rows and centering horizontally. Takes up 70% of video-container width */
 .row {
-    width: 70%;
+    width: 90%;
     display: flex;
     justify-content: center;
     margin-bottom: 20px;
 }
-/* video takes 60% of width and has margins */
+
 .video {
     width: 60%;
     margin-bottom: 15px;
     margin-left: 20px;
 }
-/* the videos themselves maintain the ratio */
+
 .video video {
     width: 100%;
     height: auto;
     border-radius: 5%;
 }
 
-/* END OF MY PORTFOLIO'S CSS FILE */
+.last_notes {
+  text-align: center;
+  height: 25%;
+  width: auto;
+  padding: 50px 0 50px 0;
+}
+
+
+/* END OF MY LATOP SIZE PORTFOLIO'S CSS FILE */
+
+
+
+/* BEGINNING OF CSS FOR MOBOLE SCREEN SIZE */
+
+@media only screen and (max-width: 450px) {
+  .container {
+    max-width: 390px;
+    margin: 0 auto;
+    flex-direction: column;
+  }
+
+  .project-images {
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .project-row {
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .project-item {
+    flex-direction: column;
+    box-sizing: border-box;
+  }
+
+  .project-item img {
+    width: 100%;
+    height: auto;
+  }
+
+  .project_description {
+    margin-top: 5px;
+    text-align: center;
+  }
+
+  .button-container {
+    display: none;
+  }
+
+  .button-container button {
+    width: 50%;
+    margin: 5px 0;
+  }
+
+  .about_me {
+    padding: 50px 0;
+    text-align: center;
+  }
+
+  .personal_info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .me {
+    width: 80%;
+    height: auto;
+  }
+
+  .info {
+   width: 100%;
+   text-align: center;
+ }
+
+ .info h1, .info h4, h1, h2, h3, h4 {
+   font-size: 24px;
+ }
+
+ h5 {
+     margin: 20px 0;
+ }
+
+ h2{
+   font-size: 28px
+ }
+
+ h3{
+   font-size: 20px;
+ }
+
+ .info p {
+   font-size: 16px;
+   line-height: 22px;
+   width: 100%;
+ }
+
+  .projects {
+    padding: 25px 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  .project-row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .project-item {
+    width: 100%;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .project-item img {
+    width: 100%;
+    border-radius: 10%;
+    order: -1;
+  }
+
+  .project_description {
+    width: 100%;
+    font-size: 16px;
+    color: #333;
+    margin-top: 10px;
+    text-align: center;
+  }
+
+  .social {
+    margin-top: 16px;
+    text-align: center;
+  }
+
+  .about_qazaq {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-size: 16px;
+  }
+
+  .about_sig {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+  }
+
+  .kazakhstan {
+    width: 100%;
+    height: auto;
+    order: -1;
+  }
+
+  .video-container {
+    width: 100%;
+    text-align: center;
+  }
+
+  .row {
+    flex-direction: column;
+    font-size: 16px;
+  }
+
+  .video {
+    width: 90%;
+    margin: 10px auto;
+  }
+
+  .last_notes {
+    padding: 50px 0;
+    text-align: center;
+  }
+
+  h5 {
+    font-size: 16px;
+  }
+  .info, .project_description, .social, .about_qazaq, .about_sig, .row {
+    width: 100%;
+  }
+
+  .sig_purpose {
+    width: 90%;
+  box-sizing: border-box;
+  margin-right: 60px;
+  margin-left: 60px;
+  }
+
+  .sig_purpose p {
+    font-size: 16px;
+  }
+
+  .sig_purpose h5 {
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  .social-link {
+    width: 40px;  
+    height: auto;
+  }
+
+}
+/* END OF CSS OF MY PORTFOLIO */

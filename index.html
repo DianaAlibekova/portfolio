@@ -17,12 +17,13 @@
 
 </head>
 <body>
-
-<!-- the buttons as a hyperlink for every section of the page -->
-  <button type="button" onclick="location.href='#CommLab'">Interactive Media</button>
-  <button type="button" onclick="location.href='#design'">Graphic Design</button>
-  <button type="button" onclick="location.href='#album'">Album Cover</button>
-  <button type="button" onclick="location.href='#videography'">Videography</button>
+ <div class="container">
+  <div class="button-container">
+    <button type="button" onclick="location.href='#CommLab'">Interactive Media</button>
+    <button type="button" onclick="location.href='#design'">Graphic Design</button>
+    <button type="button" onclick="location.href='#album'">Album Cover</button>
+    <button type="button" onclick="location.href='#videography'">Videography</button>
+  </div>
 
   <!-- structuring of the text on the right side of the picture was based on the layout on https://www.codingnepalweb.com/about-us-page-html-css/ -->
   <section class="about_me">
@@ -32,18 +33,18 @@
            data-aos-duration="3000">
            <img src="images/animated_me_new.gif" class="me">
       </div>
+
       <div class="info">
         <h1 id="about_author">DIANA ALIBEKOVA</h1>
-        <h4><span>Interactive Media</span> & <span>Graphic Designer</span></h4>
-            <p>Diana's interest in digital media flourished with a start-up "HeyMe" based in Astana back in 2020.</p>
-            <br>
-            <p>At the moment, she is the creative content manager in "Student Leadership and Engagement Committee" and "Qazaq Student Association" at New York University Abu Dhabi.</p>
-            <br>
-            <p>Find her works in interactive media, graphic design and videography here!</p>
-        <!-- the social media icons with the link to my social media pages -->
+        <h4><span>Marketing</span> & <span>Graphic Designer</span></h4>
+        <p>Diana, a Business student at NYU Abu Dhabi, focuses on marketing, graphic design, and strategy.</p>
+        <br>
+        <br>
+        <p>Her portfolio showcases expertise in interactive media, graphic design, and videography.</p>
+
         <div class="social">
        <a href="https://www.linkedin.com/in/diana-alibekova" target="_blank"><img src="images/linkedin_icon.png" class="social-link" alt="LinkedIn"></a>
-       <a href="mailto:da3002@nyu.edu"><img src="images/gmail_icon.png" class="social-link" alt="Gmail"></a>
+       <a href="mailto:da3002@nyu.edu" target="_blank"><img src="images/gmail_icon.png" class="social-link" alt="Gmail"></a>
      </div>
       </div>
     </div>
@@ -51,8 +52,9 @@
 
 <!-- Section about Interactive Media projects -->
   <section class="projects" id="CommLab">
-   <h2 id="Interactive_Media">Interactive Media Projects</h2>
-   <h3 id="Communications_Lab">Communications Lab Projects</h3>
+   <h2 id="Interactive_Media">Interactive Website Projects</h2>
+   <h3 id="Communications_Lab">Creative Coding</h3>
+
    <!-- the projects container with two websites in each row -->
    <div class="project-images">
      <div class="project-row">
@@ -86,62 +88,47 @@
 
 
 <!-- Section about Graphic design projects in three different organizations-->
- <section class="projects" id="design">
-  <h2>Graphic Design</h2>
-  <h3>Posters and Merch</h3>
+ <section class="projects" >
+  <h2 id="design">Graphic Design</h2>
+  <h3>Social Media and Merchandise</h3>
+
+  <section class="projects">
+  <section class="about_qazaq">
+    <div class="about_sig">
+      <div class="sig_purpose">
+        <a href="https://igem.org" target="_blank" style="text-decoration: none; color: inherit;">
+  <h5>iGEM Paris Competition | 2024</h5>
+</a>
+            <p>As the head of the Design & Entrepreneurship departments for NYUAD iGEM, Diana led the creation of merchandise, social media content, promotional videos, and artwork.</p>
+            <br>
+            <p>The content reached over <span> 19000 impressions</span> on Instagram account with <span>46% growth</span> in 90 days.<p>
+            <br>
+            <br>
+            <a href="https://www.instagram.com/nyuad.igem/" target="_blank"><img src="images/instagram_icon.png" class="social-link" alt="Instagram"></a>
+      </div>
+      <img src="images/iGEM.png" class="kazakhstan">
+    </div>
+  </section>
+  </section>
+
   <section class="about_qazaq">
       <div class="about_sig">
-          <div class="image-container">
-            <div data-aos="zoom-in">
-              <img src="images/events_board_1.png" alt="Event Image 1">
-            </div>
-          </div>
-          <div class="image-container">
-            <div data-aos="zoom-in">
-              <img src="images/events_board_2.png" alt="Event Image 2">
-            </div>
-          </div>
-          <div class="image-container">
-            <div data-aos="zoom-in">
-              <img src="images/events_board_3.png" alt="Event Image 3">
-            </div>
-          </div>
+        <div class="image-container">
+          <div data-aos="zoom-in">
+          <img src="images/events_board.png" alt="Event Image">
+        </div>
+      </div>
           <div class="sig_purpose">
-              <h5>Student Engagement & Leadership | 2023</h5>
-              <p>Diana took part in organizing university events with the primary goal of cultivating a sense of community among the students.</p>
+              <h5>Student Leadership Committee | 2023</h5>
+              <p>Diana organized university events to foster community among students.</p>
               <br>
-              <p>She developed promotional materials, which ensured the attendance of 20-25% of the university student body at every event.</p>
+              <p>Her promotional efforts drew <span> 20-25% </span> of the student body to each event.</p>
               <br>
               <br>
+              <a href="https://www.instagram.com/nyuadeventsboard/" target="_blank"><img src="images/instagram_icon.png" class="social-link" alt="Instagram"></a>
           </div>
       </div>
   </section>
-
-  <!-- <div class="project-images">
-    <div class="project-row">
-      <div class="project-item-2">
-        <div data-aos="zoom-in"><a href="eventsboard.html"><img src="images/events_board_logo.jpg" alt="eb_logo"></a>
-        <div class="project_description">
-        <p><b>STUDENT ENGAGEMENT & LEADERSHIP</b></p>
-        <p>Posters and Merch</p></div>
-      </div>
-    </div>
-    <div class="project-item-2">
-      <div data-aos="zoom-in"><a href="heyme.html"><img src="images/heyme_logo.jpeg" alt="heyme_logo"></a>
-       <div class="project_description">
-         <p><b>HEYME START-UP</b></p>
-         <p>T-shirt print design</p>
-       </div></div>
-    </div>
-    <div class="project-item-2">
-      <div data-aos="zoom-in"><a href="qazaq.html"><img src="images/qazaq_sig_logo.png" alt="qazaq_logo"></a>
-       <div class="project_description">
-         <p><b>QAZAQ STUDENT ASSOCIATION</b></p>
-         <p>Digital posters</p>
-       </div></div>
-    </div>
-    </div>
-  </div> -->
 </section>
 
 
@@ -150,11 +137,11 @@
   <div class="about_sig">
     <div class="sig_purpose">
       <h5>"HeyMe" brand | 2020</h5>
-          <p>The brand "HeyMe" is directed to popularize the Kazakh identity through digital art. </p>
-          <br>
-          <p>The designs on the T-shirts include the visuals created through digital drawings and Photoshop and the written materials connected to them, which convey wise Kazakh phrases and author's unique word games.  </p>
-          <br>
-          <br>
+      <p>"HeyMe" aimed to popularize Kazakh identity through digital art, selling over <span>a hundred</span> t-shirts in the summer of 2020.</p>
+      <br>
+      <p>The T-shirt designs featured digital visuals and Kazakh phrases, blending wisdom with unique wordplay.</p>
+      <br>
+      <br>
     </div>
     <img src="images/heyme_my_baby.png" class="kazakhstan">
   </div>
@@ -167,43 +154,81 @@
     <img src="images/qazaq_posters.png" class="kazakhstan">
     <div class="sig_purpose">
       <h5>Qazaq Student Association |2023</h5>
-          <p>Qazaq SIG is directed to intercultural exchange by presenting the Kazakh identity and traditions on an international platform. </p>
+          <p>Qazaq SIG, currently enlarged to Central Asian SIG, is directed to intercultural exchange by presenting the <span>Central Asian</span> traditions on an international platform. </p>
           <br>
-          <p>Diana is responsible not only for the event organization but also for the creation and management of all the creative and digital content.</p>
+          <p>Diana was responsible for the event organization and the creation of all creative digital content.</p>
           <br>
-          <p>In two weeks 300 students followed the Instagram account, which is around 16% of the student body at NYUAD. </p>
+          <p>In <span> two weeks</span>, <span> 300 students followed</span> the Instagram account, which is a <span> 16%</span> of the student body at NYUAD </p>
           <br>
           <br>
     </div>
   </div>
 </section>
-</section>
-
-
-
-<!-- Section about the Album Cover created by me-->
-<section class="projects" id="album">
-  <div class="personal_info">
-    <div class="info">
-      <h2>Take off Your Crown</h2>
-      <h3>The design of the Album Cover</h3>
-          <p>The song "Сними корону" (Take off your Crown) by ChiL-Q was released during the pandemic about the mental fatigue and consequences of COVID-19. Based on the preferences of the artist and the lyrics of the song, Diana created the digital album cover for the song. </p>
-    </div>
-    <div class="block" data-aos="flip-left"
-         data-aos-easing="ease-out-cubic"
-         data-aos-duration="3000">
-         <img src="images/cover.jpg" alt="Frame" class="me">
-    </div>
-  </div>
 </section>
 
 <!-- Section about the videography projects -->
 <section class="projects">
   <h2 id="videography">Videography</h2>
-  <h3>Instagram Reels</h3>
-  <!-- the container with two rows with three videos in each row, so six videos overall -->
+  <h3>Filming and Editing</h3>
+  <!-- the container with three vertical videos or two horizontal videos in each row -->
   <div class="video-container">
           <div class="row">
+            <div class="video">
+                <video width="100%" height="auto" controls>
+                    <source src="videos/thailand.mp4" type="video/mp4">
+                </video>
+                <p><b>THAILAND</b></p>
+                <p>Filming & Editing</p>
+            </div>
+            <div class="video">
+                <video width="100%" height="auto" controls>
+                    <source src="videos/georgia.mp4" type="video/mp4">
+                </video>
+                <p><b>GEORGIA</b></p>
+                <p>Filming & Editing</p>
+            </div>
+              <div class="video">
+                  <video width="100%" height="auto" controls>
+                      <source src="videos/turkey.mp4" type="video/mp4">
+                  </video>
+                  <p><b>TURKIYE 156K VIEWS</b></p>
+                  <p>Filming & Editing</p>
+              </div>
+          </div>
+
+          <div class="row">
+            <div class="video">
+                <video width="100%" height="auto" controls>
+                    <source src="videos/italian.mp4" type="video/mp4">
+                </video>
+                <p><b>TRAVEL REELS</b></p>
+                <p>Editing</p>
+          </div>
+          <div class="video">
+              <video width="100%" height="auto" controls>
+                  <source src="videos/graduation.mp4" type="video/mp4">
+              </video>
+              <p><b>MY HIGH SCHOOL GRADUATION</b></p>
+              <p>Editing</p>
+          </div>
+          </div>
+
+
+          <div class="row">
+            <div class="video">
+                <video width="100%" height="auto" controls>
+                    <source src="videos/laboratory.mp4" type="video/mp4">
+                </video>
+                <p><b>IGEM LAB WORK</b></p>
+                <p>Filming & Editing</p>
+            </div>
+              <div class="video">
+                  <video width="100%" height="auto" controls>
+                      <source src="videos/education.mp4" type="video/mp4">
+                  </video>
+                  <p><b>IGEM EDUCATION PROJECT</b></p>
+                  <p>Filming & Editing</p>
+              </div>
               <div class="video">
                   <video width="100%" height="auto" controls>
                       <source src="videos/childhood.mp4" type="video/mp4">
@@ -211,66 +236,29 @@
                   <p><b>CHILDHOOD VIBES</b></p>
                   <p>Filming & Editing</p>
               </div>
-              <div class="video">
-                  <video width="100%" height="auto" controls>
-                      <source src="videos/turkey.mp4" type="video/mp4">
-                  </video>
-                  <p><b>TURKEY TRIP 156K VIEWS</b></p>
-                  <p>Filming & Editing</p>
-              </div>
-              <div class="video">
-                  <video width="100%" height="auto" controls>
-                      <source src="videos/qazaq.mp4" type="video/mp4">
-                  </video>
-                  <p><b>QAZAQ SIG PREPERATION</b></p>
-                  <p>Filming & Editing</p>
-              </div>
           </div>
-          <div class="row">
-              <div class="video">
-                  <video width="100%" height="auto" controls>
-                      <source src="videos/restaurant.mp4" type="video/mp4">
-                  </video>
-                  <p><b>AESTHETIC VIDEO</b></p>
-                  <p>Filming & Editing</p>
-              </div>
-              <div class="video">
-                  <video width="100%" height="auto" controls>
-                      <source src="videos/georgia.mp4" type="video/mp4">
-                  </video>
-                  <p><b>GEORGIA TRIP</b></p>
-                  <p>Filming & Editing</p>
-              </div>
-              <div class="video">
-                  <video width="100%" height="auto" controls>
-                      <source src="videos/museum.mp4" type="video/mp4">
-                  </video>
-                  <p><b>THE LOUVRE ABU DHABI</b></p>
-                  <p>Filming & Editing</p>
-              </div>
-          </div>
-          <div class="video">
-              <video width="100%" height="auto" controls>
-                  <source src="videos/graduation.mp4" type="video/mp4">
-              </video>
-              <p><b>MY HIGH SCHOOL GRADUATION</b></p>
-              <p>Only Editing</p>
+
+<div class="video">
+    <video width="100%" height="auto" controls>
+        <source src="videos/promotion.mp4#t=2" type="video/mp4">
+        <!-- Poster attribute for setting the cover image -->
+        <poster="videos/promotion.mp4#t=2">
+    </video>
+    <p><b>IGEM PROMOTION VIDEO</b></p>
+    <p>Filming & Editing</p>
+</div>
       </div>
 </section>
 
-<!-- <section class="about_me">
-  <div class="personal_info">
+<section class="last_notes">
+  <p>Handcrafted and coded with passion by Diana.</p>
+  <br>
+  <p>P.S. Made with 💻 and a lot of ☕ </p>
+  <br>
+</section>
 
-    <div class="info">
-      <h1 id="about_author">CONTACT ME</h1>
-      <h4><span>if you liked my works</span> & <span>you want to work together</span></h4>
-      <div class="social">
-     <a href="https://www.linkedin.com/in/diana-alibekova" target="_blank">Connect on LinkedIn</a>
-     <a href="mailto:da3002@nyu.edu">Write an E-mail to da3002@nyu.edu</a>
-   </div>
-    </div>
-  </div>
-</section> -->
+
   <script src="script.js"> </script>
+</div>
 </body>
 </html>
